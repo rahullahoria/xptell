@@ -6,3 +6,4 @@ coverage
 dist
 .nyc_output
 temp
+content/data/ghost-dev.db

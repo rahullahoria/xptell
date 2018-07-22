@@ -1,3 +1,19 @@
+# Features:
+1. User Restration
+2. Comments
+3. add senseser
+4. Link corrections
+5. Logo Update
+
+
+
+
+
+
+
+
+
+
 <a href="https://github.com/TryGhost/Ghost"><img src="https://cloud.githubusercontent.com/assets/120485/18661790/cf942eda-7f17-11e6-9eb6-9c65bfc2abd8.png" alt="Ghost" /></a>
 <a href="https://travis-ci.org/TryGhost/Ghost"><img align="right" src="https://travis-ci.org/TryGhost/Ghost.svg?branch=master" alt="Build status" /></a>
 

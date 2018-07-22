@@ -1,3 +1,3 @@
 # Content / Logs
 
-This is the default log file location when Ghost runs in Production.
+This is the default log file location when Xptell runs in Production.

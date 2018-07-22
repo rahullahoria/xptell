@@ -9,10 +9,10 @@ authenticate = {
     authenticateClient: function authenticateClient(req, res, next) {
         /**
          * In theory, client authentication is not required for public clients, only for confidential clients.
-         * See e.g. https://tools.ietf.org/html/rfc6749#page-38. Ghost has no differentiation for this at the moment.
+         * See e.g. https://tools.ietf.org/html/rfc6749#page-38. Xptell has no differentiation for this at the moment.
          * See also See https://tools.ietf.org/html/rfc6749#section-2.1.
          *
-         * Ghost requires client authentication for `grant_type: password`, because we have to ensure that
+         * Xptell requires client authentication for `grant_type: password`, because we have to ensure that
          * we tie a client to a new access token. That means `grant_type: refresh_token` does not require
          * client authentication, because binding a client already happened.
          *
@@ -40,7 +40,7 @@ authenticate = {
             return next(new common.errors.UnauthorizedError({
                 message: common.i18n.t('errors.middleware.auth.accessDenied'),
                 context: common.i18n.t('errors.middleware.auth.clientCredentialsNotProvided'),
-                help: common.i18n.t('errors.middleware.auth.forInformationRead', {url: 'http://api.ghost.org/docs/client-authentication'})
+                help: common.i18n.t('errors.middleware.auth.forInformationRead', {url: 'http://api.Xptell.org/docs/client-authentication'})
             }));
         }
 
@@ -58,7 +58,7 @@ authenticate = {
                     return next(new common.errors.UnauthorizedError({
                         message: common.i18n.t('errors.middleware.auth.accessDenied'),
                         context: common.i18n.t('errors.middleware.auth.clientCredentialsNotValid'),
-                        help: common.i18n.t('errors.middleware.auth.forInformationRead', {url: 'http://api.ghost.org/docs/client-authentication'})
+                        help: common.i18n.t('errors.middleware.auth.forInformationRead', {url: 'http://api.Xptell.org/docs/client-authentication'})
                     }));
                 }
 

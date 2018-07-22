@@ -12,7 +12,7 @@
     },
     "blog": {
         "title": {
-            "defaultValue": "Ghost",
+            "defaultValue": "Xptell",
             "validations": {
                 "isLength": {
                     "max": 150
@@ -28,7 +28,7 @@
             }
         },
         "logo": {
-            "defaultValue": "https://casper.ghost.org/v1.0.0/images/ghost-logo.svg"
+            "defaultValue": "https://s3.ap-south-1.amazonaws.com/lc-public/xptell.png"
         },
         "cover_image": {
             "defaultValue": "https://casper.ghost.org/v1.0.0/images/blog-cover.jpg"

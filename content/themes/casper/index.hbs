@@ -38,15 +38,18 @@ into the {body} of the default.hbs template --}}
     <div style="width:20%;float:right">
         <div class="post-card">
 
+           
+
             <div class="post-card-content">
        
             <header class="post-card-header">
+              <h2 style="margin-left:20px;margin-top:10px;" class="post-card-title">Hot Tags</h2>
               
                 {{#get "tags" limit="all"}}
     
                     {{#foreach tags}}
                 
-                        <a href="{{url}}" ><h2 style="margin-left:10%" class="post-card-tags">{{name}}</h2> </a>
+                        <a href="{{url}}" ><h2 style="margin-left:20px" class="post-card-tags">{{name}}</h2> </a>
                 
                     {{/foreach}}
     
@@ -61,15 +64,19 @@ into the {body} of the default.hbs template --}}
 
 <div class="post-card">
 
+
             <div class="post-card-content">
-       
+
+               
             <header class="post-card-header">
+                <h2 style="margin-left:20px;margin-top:10px;" class="post-card-title">Authors</h2>
+                
               
                 {{#get "users" limit="all"}}
     
                     {{#foreach users}}
                 
-                        <a href="{{url}}" ><h2 style="margin-left:10%" class="post-card-tags">{{name}}</h2> </a>
+                        <a href="{{url}}" ><h2 style="margin-left:20px" class="post-card-tags">{{name}}</h2> </a>
                 
                     {{/foreach}}
     

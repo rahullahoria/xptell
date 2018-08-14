@@ -58,6 +58,29 @@ into the {body} of the default.hbs template --}}
             
         
 </div>
+
+<div class="post-card">
+
+            <div class="post-card-content">
+       
+            <header class="post-card-header">
+              
+                {{#get "users" limit="all"}}
+    
+                    {{#foreach users}}
+                
+                        <a href="{{url}}" ><h2 style="margin-left:10%" class="post-card-tags">{{name}}</h2> </a>
+                
+                    {{/foreach}}
+    
+                {{/get}}
+            </header>
+            
+       
+        </div>
+            
+        
+</div>
     </div>
 </div>
     

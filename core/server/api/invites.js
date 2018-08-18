@@ -110,6 +110,8 @@ invites = {
                         resetLink: urlService.utils.urlJoin(adminUrl, 'signup', security.url.encodeBase64(invite.get('token')), '/')
                     };
 
+                    console.log(emailData); 
+
                     return mail.utils.generateContent({data: emailData, template: 'invite-user'});
                 }).then(function (emailContent) {
                     var payload = {
